@@ -1,5 +1,6 @@
 # Statistics-for-Data-Scientists-Notes
 This repo includes notes I read from "Practical Statistics for Data Scientists - 50 Essential Concepts Using R and Python".
+To assess the book, see the repo or [here]<PracticalStatisticsforDataScientists50EssentialConceptsUsingRandPythonbyPeterBruceAndrewBrucePeterGedeck.pdf>
 
 # Contents
 * [1 Exploratory Data Analysis](#1-exploratory-data-analysis)
