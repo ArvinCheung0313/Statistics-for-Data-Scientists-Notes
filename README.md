@@ -1,4 +1,4 @@
-## Statistics-for-Data-Scientists-Notes
+## Statistics for Data Scientists Notes
 This repo includes essential notes I read from "Practical Statistics for Data Scientists - 50 Essential Concepts Using R and Python".
 
 Currently updating...
