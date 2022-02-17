@@ -180,13 +180,13 @@ Mistakenly concluding an effect is real (when it is due to chance), also known a
 #### 4.2.4 Type II Error
 Mistakenly concluding an effect is due to chance (when it is real), also known as false negative. In other words, a type II error occurs when a person failed to reject a **false** null hypothesis. The probability of making a type II error is called Beta (β), and this is related to the power of the statistical test (power = 1- β). We can understand them by using a confusion matrix.
   
-*Figure 4-2. Type II Error*
+*Figure 4-2. Type II Error*  
 <img width="450" alt="image" src="https://user-images.githubusercontent.com/91806768/154390424-f74f44db-1931-4b7f-be82-1f332271a7ad.png">
   
 #### 4.2.5 Confidence Level
 The percentage of confidence intervals, constructed in the same way from the same population, that are expected to contain the statistic of interest. Given a 90% confidence interval, it covers the central 90% of the bootstrap sampling distribution of a sample statistic. More generally, an 90% confidence interval should contain similar sample estimates 90% of the time on average in similar sampling procedure.
 
-*Figure 4-4. Boostrap confidence interval for the annual income of loan applications, based on a sample of 20*
+*Figure 4-4. Boostrap confidence interval for the annual income of loan applications, based on a sample of 20*  
 <img width="450" alt="Figure 2-9" src="https://user-images.githubusercontent.com/91806768/154370693-2f438d49-1b91-444b-a4f9-1acfac822edf.png">
 
 #### 4.2.6 Confidence Interval
