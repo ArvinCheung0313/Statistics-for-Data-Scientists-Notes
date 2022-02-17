@@ -120,7 +120,7 @@ The bootstrap is a powerful tool for assessing the variability of a sample stati
   The binomial distribution is the frequency distribution of the number of successes(x) in a given number of trials(*n*) with specified probability(*p*) of success in each trial. There is a family of binomial distributions, depending on the values of *n* and *p*. The binomial distribution would answer a question like:
   > If he probability of a click converting to a sale is 0.02, what is the probability of observing 0 sales in 200 clicks?
 
-* **_Characterics_**  
+* **_Characterics_**
   * **mean**: *n* * *p*
     Which is known as expected value.
   * **variance**: *n* * *p*(1-*p*)
