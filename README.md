@@ -1,7 +1,7 @@
 ## Statistics for Data Scientists Notes
 This repo includes essential notes I read from：
 * Practical Statistics for Data Scientists - 50 Essential Concepts Using R and Python [book link](https://github.com/ArvinCheung0313/Statistics-for-Data-Scientists-Notes/blob/main/PracticalStatisticsforDataScientists50EssentialConceptsUsingRandPythonbyPeterBruceAndrewBrucePeterGedeck.pdf)
-* Think Stats [book link]()
+* Think Stats [book link](https://github.com/ArvinCheung0313/Statistics-for-Data-Scientists-Notes/blob/main/thinkstats.pdf)
 
 :surfer:Currently updating...:surfing_man: 2020-02-17
 
