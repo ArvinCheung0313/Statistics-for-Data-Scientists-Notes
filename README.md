@@ -1,9 +1,9 @@
 ## Statistics for Data Scientists Notes
-This repo includes essential notes I read from "Practical Statistics for Data Scientists - 50 Essential Concepts Using R and Python".
+This repo includes essential notes I read from：
+* Practical Statistics for Data Scientists - 50 Essential Concepts Using R and Python [book link](https://github.com/ArvinCheung0313/Statistics-for-Data-Scientists-Notes/blob/main/PracticalStatisticsforDataScientists50EssentialConceptsUsingRandPythonbyPeterBruceAndrewBrucePeterGedeck.pdf)
+* Think Stats [book link]()
 
 :surfer:Currently updating...:surfing_man: 2020-02-17
-
-To assess the book, see the repo or [here](https://github.com/ArvinCheung0313/Statistics-for-Data-Scientists-Notes/blob/main/PracticalStatisticsforDataScientists50EssentialConceptsUsingRandPythonbyPeterBruceAndrewBrucePeterGedeck.pdf)
 
 ## Contents
 * [1 Exploratory Data Analysis](#1-exploratory-data-analysis)
@@ -255,6 +255,11 @@ A statistical test to determine whether two population means are different when 
 
 
 ### 4.8 Simpson's Paradox
+
+#### 4.8.1 Who's Simpson?
+Simpson’s Paradox is a statistical phenomenon where an association between two variables in a population emerges, disappears or reverses when the population is divided into subpopulations.
+
+#### 4.8.2 Correlation Formula
 
 
 ## 5 Classification
