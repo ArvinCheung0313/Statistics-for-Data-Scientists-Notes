@@ -23,9 +23,10 @@ To assess the book, see the repo or [here](https://github.com/ArvinCheung0313/St
   * [4.1 A/B Testing](#41-ab-testing)
   * [4.2 Statistical Significance and p-Values](#42-statistical-significance-and-p-values)
   * [4.3 *t*-Tests](#43-t-tests)
-  * [4.4 ANOVA](#44-anova)
-  * [4.5 Chi-Square Test](#45-chi-square-test)
-  * [4.6 Power and Sample Size](#46-power-and-sample-size)
+  * [4.4 *z*-Tests](#44-z-tests)
+  * [4.5 ANOVA](#45-anova)
+  * [4.6 Chi-Square Test](#46-chi-square-test)
+  * [4.7 Power and Sample Size](#47-power-and-sample-size)
 
 ## 1 Exploratory Data Analysis
 
@@ -191,16 +192,53 @@ The percentage of confidence intervals, constructed in the same way from the sam
 
 #### 4.2.6 Confidence Interval
 The confidence interval consists of the upper and lower bounds of the estimate you expect to find at a given level of confidence.
+
+#### 4.2.7 Practical Significance
+Practical significance is the level of change that you would expect to see from a business standpoint for the change to be valuable. What is considered practically significant can vary by field. In medicine, one would expect a 5,10 or 15% improvement for the result to be considered practically significant. At Google, for example, a 1-2% improvement in click through probability is practically significant.
+
+The statistical significance bar is often lower than the practical significance bar, so that if the outcome is practically significance, it is also statistically significant.
   
 ### 4.3 *t*-Tests
+A type of inferential statistic used to determine if there is a significant difference between the means of two groups, which may be related in certain features.
+* **Formula**  
+  <img width="139" alt="image" src="https://user-images.githubusercontent.com/91806768/154591478-acc706c9-c805-4879-9e0c-5fdde64237e3.png">  
+  Where:
+  * m = mean
+  * μ = theoretical value
+  * sd = standard deviation
+  * n = The sample size (the number of paired differences)
+
+* **Assumptions**  
+  * The scale of measurement applied to the data collected follows a continuous or ordinal scale, such as the scores for an IQ test.
+  * Of a simple random sample, the data is collected from a representative, randomly selected portion of the total population.
+  * The data should result in a normal distribution, bell-shaped distribution curve when plotted.
+  * Homogeneous of variance exists when the standard deviations of samples are approximately equal.
+
+### 4.4 *z*-Tests
+A statistical test to determine whether two population means are different when the variances are known and the sample size is large. It's also a hypothesis test in which the z-statistic follows a normal distribution.
+
+* **Formula**  
+  <img width="139" alt="image" src="https://user-images.githubusercontent.com/91806768/154591580-310e0bda-ee9a-409f-b2b1-fda6c57ca814.png">  
+  Where:
+  * X = sample average
+  * μ0 = mean
+  * sd = standard deviation
+
+* **Differences Between *z*-Tests And *t*-Tests**
+  * **Sample Size**  
+    z-tests are closely related to t-tests, but t-tests are best performed when an experiment has a small sample size, less than 30.
+  * **Known Sd**  
+    Also, t-tests assume the standard deviation is unknown, while z-tests assume it is known. If the standard deviation of the population is unknown, but the sample size is greater than or equal to 30, then the assumption of the sample variance equaling the population variance is made while using the z-test.
+
+* **z-Score**  
+  A z-score, or z-statistic, is a number representing how many standard deviations above or below the mean population the score derived from a z-test is. It describes a value's relationship to the mean of a group of values. 0 indicates that the data point's score is identical to the mean score. It could be positive or negative.
+
+### 4.5 ANOVA
 
 
-### 4.4 ANOVA
+### 4.6 Chi-Square Test
 
 
-### 4.5 Chi-Square Test
-
-
-### 4.6 Power and Sample Size
+### 4.7 Power and Sample Size
 
 
