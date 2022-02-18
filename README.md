@@ -12,7 +12,8 @@ To assess the book, see the repo or [here](https://github.com/ArvinCheung0313/St
   * [2.2 When Does Size Matter?](#22-when-does-size-matter)
   * [2.3 Selection Bias](#23-selection-bias)
   * [2.4 Central Limit Theorem](#24-central-limit-theorem)
-  * [2.5 The Bootstrap](#25-the-bootstrap)
+  * [2.5 Law of Large Numbers (LLN)](#25-law-of-large-numbers-lln)
+  * [2.6 The Bootstrap](#26-the-bootstrap)
 * [3 Common Distributions](#3-common-distributions)
   * [3.1 Normal Distribution](#31-normal-distribution)
   * [3.2 Binomial Distribution](#32-binomial-distribution)
@@ -80,7 +81,10 @@ The Central Limit Theorem assumes as follow:
 * **10% Condition**: When the sample is drawn without replacement (usually the case), the sample size, n, should be no more than 10% of the population.
 * **Sample Size Assumption**: The sample size must be sufficiently large. Although the Central Limit Theorem tells us that we can use a Normal model to think about the behavior of sample means when the sample size is large enough, it does not tell us how large that should be. If the population is very skewed, you will need a pretty large sample size to use the CLT, however if the population is unimodal and symmetric, even small samples are acceptable. So think about your sample size in terms of what you know about the population and decide whether the sample is large enough. In general a sample size of 30 is considered sufficient if the sample is unimodal (and meets the 10% condition).
 
-### 2.5 The Bootstrap
+### 2.5 Law of Large Numbers (LLN)
+In statistics, the theorem that, as the number of identically distributed, randomly generated variables increases, their sample mean (average) approaches their theoretical mean. In other words, we can replace probability with frequency approximation; we can replace the overall mean with sample mean approximation.
+
+### 2.6 The Bootstrap
 One easy and effective way to estimate the sampling distribution of a model parameters, is to draw additional samples, with replacement, from the sample itself and recalculate the model for each resample. This procedure is called **_Bootstrap_**.
 
 Such a procedure does not involve any assumptions about the data or the sample statistic being normally distributed. For a sample of *n*, steps are sa follow:
