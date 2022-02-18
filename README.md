@@ -28,6 +28,14 @@ To assess the book, see the repo or [here](https://github.com/ArvinCheung0313/St
   * [4.5 ANOVA](#45-anova)
   * [4.6 Chi-Square Test](#46-chi-square-test)
   * [4.7 Power and Sample Size](#47-power-and-sample-size)
+  * [4.8 Simpson's Paradox](#48-simpsons-paradox)
+* [5 Classification](#5-classification)
+  * [5.1 Naive Bayes](#51-naive-bayes)
+  * [5.2 Confusion Matrix](#52-confusion-matrix)
+  * [5.3 Bias-variance Trade Off](#53-bias-variance-trade-off)
+* [6 Probability](#6-probability)
+  * [6.1 Conditional Probability](#61-conditional-probability)
+  * [6.2 Bayesian Formula](#62-bayesian-formula)
 
 ## 1 Exploratory Data Analysis
 
@@ -246,3 +254,22 @@ A statistical test to determine whether two population means are different when 
 ### 4.7 Power and Sample Size
 
 
+### 4.8 Simpson's Paradox
+
+
+## 5 Classification
+### 5.1 Naive Bayes
+
+
+### 5.2 Confusion Matrix
+
+
+### 5.3 Bias-variance Trade Off
+
+
+## 6 Probability
+
+### 6.1 Conditional Probability
+
+
+### 6.2 Bayesian Formula 
