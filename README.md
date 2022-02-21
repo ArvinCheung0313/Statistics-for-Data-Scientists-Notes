@@ -70,6 +70,8 @@ Systematics error. An error can be minimized but cannot be fully eliminated in a
 
 #### 2.1.9 Sample Bias
 A sample that misrepresents the population.
+
+[back to top](#contents)
   
 ### 2.2 When Does Size Matter?
 Sometimes smaller amounts of data is better. Time and effort spent on random sampling not only reduces bias but also allows greater attention to data exploration and data quality. It might be prohibitively expensive to track down missing values or evaluate outliers (which may contain useful information) in millions of records, but doing to in a sample of several thousand records may be feasible and efficient.
@@ -107,6 +109,8 @@ Such a procedure does not involve any assumptions about the data or the sample s
 
 The bootstrap is a powerful tool for assessing the variability of a sample statistic. It can be applied in a wide variety of circumstances without extensive study of mathematical approximations of sampling distributions. It also allows us to estimate sampling distributions for statistics where no mathematical approximation has been developed. When applied to predictive models, aggregating multiple boostrap sample predictions (bagging) outperforms the use of a single model.
 
+[back to top](#contents)
+
 ## 3 Common Distributions
 
 ### 3.1 Normal Distribution
@@ -133,7 +137,7 @@ The binomial distribution is the frequency distribution of the number of success
 > If the probability of a click converting to a sale is 0.02, what is the probability of observing 0 sales in 200 clicks?
 
 #### 3.2.2 Characteritics
-* **mean**: *n***p*
+* **mean**: *n***p*  
   Which is known as expected value.
 * **variance**: *n***p*(1-*p*)
 
@@ -146,7 +150,7 @@ Geometric distribution is a type of discrete probability distribution that repre
 * The probability of success for each trial, namely *p*, is identical
 
 #### 3.3.2 Characteritics
-* **mean**: 1/*p*
+* **mean**: 1/*p*  
   Which is known as expected value.
 * **variance**: (1-*p*)/*p*^2
 
@@ -168,6 +172,8 @@ A Exponential distribution is a continuous distribution which is used to measure
 #### 3.5.2 Characteritics
 * **mean**: 1/λ
 * **variance**: 1/λ^2
+
+[back to top](#contents)
 
 ## 4 Statistical Experiments and Significance Testing
 
@@ -210,6 +216,8 @@ Practical significance is the level of change that you would expect to see from 
 
 The statistical significance bar is often lower than the practical significance bar, so that if the outcome is practically significance, it is also statistically significant.
   
+[back to top](#contents)
+
 ### 4.3 *t*-Tests
 A type of inferential statistic used to determine if there is a significant difference between the means of two groups, which may be related in certain features.
 * **Formula**  
@@ -253,6 +261,8 @@ A statistical test to determine whether two population means are different when 
 
 ### 4.7 Power and Sample Size
 
+
+[back to top](#contents)
 
 ### 4.8 Simpson's Paradox
 
