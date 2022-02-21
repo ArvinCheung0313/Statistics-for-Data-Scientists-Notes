@@ -29,6 +29,7 @@ This repo includes essential notes I read from：
   * [4.6 Chi-Square Test](#46-chi-square-test)
   * [4.7 Power and Sample Size](#47-power-and-sample-size)
   * [4.8 Simpson's Paradox](#48-simpsons-paradox)
+  * [4.9 Correlation & Covariance](#49-correlation--covariance)
 * [5 Classification](#5-classification)
   * [5.1 Naive Bayes](#51-naive-bayes)
   * [5.2 Confusion Matrix](#52-confusion-matrix)
@@ -80,7 +81,13 @@ Sometimes smaller amounts of data is better. Time and effort spent on random sam
 > One classic scenario for the value of big data is when the data is not only **big** but also **sparse** as well. Only when such enormous quantities of data are accumulated can effective search results be returned for most queries when considering the search queries reveived by Google.
 
 ### 2.3 Selection Bias
-Bias resulting from the way in which observations are selected and the samples cannot fully represent the whole population. For example, when analyzing which web design is more attractive to customers, we cannot decide which customer view which version of web, and such a self-selection lead to imbalance groups of samples.
+Bias resulting from the way in which observations are selected and the samples cannot fully represent the whole population. For example, when analyzing which web design is more attractive to customers, we cannot decide which customer view which version of web, and such a self-selection leads to imbalance groups of samples.
+
+There are serveral types of selecton bias:
+* **Sampling Bias**: It's a systematic error due to a non-random sample of a population causing some members of the population to be less likely to be included than others resulting in a biased sample.
+* **Time Interval**: A trial may be terminated early at an extreme value(often for ethical reasons), but the extreme value is likely to be reached by the variable with the largest variance, even if all variables have a similar mean.
+* **Data**: When specific subsets of data are chosen to support a conclusion or rejection of bad data on arbitrary grounds, intead of according to previously stated or generally agreed criteria.
+* **Attrtion**: It's caused by attrition(loss of participants) discounting trial subjects/tests that did not run to completion.
 
 ### 2.4 Central Limit Theorem
 In many situations, when independent random variables are summed up, their properly normalized sum tends toward a normal distribution (informally a bell curve) even if the original variables themselves are not normally distributed. 
@@ -215,7 +222,13 @@ The confidence interval consists of the upper and lower bounds of the estimate y
 Practical significance is the level of change that you would expect to see from a business standpoint for the change to be valuable. What is considered practically significant can vary by field. In medicine, one would expect a 5,10 or 15% improvement for the result to be considered practically significant. At Google, for example, a 1-2% improvement in click through probability is practically significant.
 
 The statistical significance bar is often lower than the practical significance bar, so that if the outcome is practically significance, it is also statistically significant.
-  
+
+#### 4.2.8 Estimator
+A function of the sample, a rule that tells you how to calculate an estimate of a parameter from a sample.
+
+#### 4.2.9 Estimate
+A value of an estimator calculated from a sample.
+
 [back to top](#contents)
 
 ### 4.3 *t*-Tests
@@ -262,25 +275,74 @@ A statistical test to determine whether two population means are different when 
 ### 4.7 Power and Sample Size
 
 
-[back to top](#contents)
 
 ### 4.8 Simpson's Paradox
 
-#### 4.8.1 Who's Simpson?
+**Who's Simpson?**  
 Simpson’s Paradox is a statistical phenomenon where an association between two variables in a population emerges, disappears or reverses when the population is divided into subpopulations.
 
-#### 4.8.2 Correlation Formula
+### 4.9 Correlation & Covariance
 
+#### 4.9.1 Correlation
+correlation is a measure that determines the degree to which two or more random variables move in sequence. Correlation and covariance are transformable.  
+<img width="549" alt="image" src="https://user-images.githubusercontent.com/91806768/155036554-8fe5da0b-510c-4681-8cd9-a557016143ff.png">
+
+#### 4.9.2 Corvariance
+Covariance is a statistical term that refers to a systematic relationship between two random variables in which a change in the other reflects a change in one variable. The covariance value can range from -∞ to +∞, with a negative value indicating a negative relationship and a positive value indicating a positive relationship.  
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/91806768/155036413-e4d7f3b2-5ed4-4870-be6d-b61b12151f81.png">
+
+[back to top](#contents)
 
 ## 5 Classification
 ### 5.1 Naive Bayes
 
 
 ### 5.2 Confusion Matrix
+A confusion matrix is a 2x2 table that summarizes the prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. It can be used to calculate various measurements such as: accuracy, prevalence, specificity, sensitivity, precision, and recall.
 
+*Figure 5-1. Confusion Matrix*  
+<img width="1234" alt="image" src="https://user-images.githubusercontent.com/91806768/155035453-acc12fd1-2de9-44c6-a9ba-7a9c4572ee13.png">
 
-### 5.3 Bias-variance Trade Off
+### 5.3 Bias-Variance Trade Off
 
+#### 5.3.1 Bias
+Bias is the amount that a model’s prediction differs from the target value, compared to the training data. It results from simplifying the assumptions used in a model so the target functions are easier to approximate. Bias can be introduced by model selection and it can lead to underfitting.
+
+In Data Science, bias can be reduced by resampling the data:
+* K-fold resampling, in which a given data set is split into a K number of sections, or folds, where each fold is used as a testing set.
+* Bootstrapping, which involves iteratively resampling a dataset with replacement.
+
+Low Bias Machine Learning Algorithms:
+* Decision Trees
+* KNN
+* SVM
+
+High Bias Machine Learning Algorithms:
+* Linear Regression
+* Logistic Regression
+
+#### 5.3.2 Variance
+Variance describes how much a random variable differs from its expected value. It's generated due to complex machine learning algorithm, the model learns from random noise and it becomes sensitive and leads to overfitting. In other words, the more complex the model is, the higher variance it could generate.
+
+Low Variance Machine Learning Algorithms:
+* Linear Regression
+* Logistics Regression
+
+High Variance Machine Learning Algorithms:
+* Decision Trees
+* KNN
+* SVM
+
+#### 5.3.3 Bias-Variance Trade Off
+
+Normally, as the complexity of the model increases, there will be a reduction in bias error. However, when reaching a specific point, if the model continues to get complex, the variance error will increase and resulting in overfitting.
+
+*Figure 5-2. Model Complexity and Error*  
+<img width="487" alt="image" src="https://user-images.githubusercontent.com/91806768/155032132-86c54a7f-8f08-4c14-91d1-2f19503f42d7.png">
+
+When building a supervised machine-learning algorithm, the goal is to achieve **low bias** and **low variance** for the most accurate predictions. Data scientists must do this while keeping underfitting and overfitting in mind. There is no escaping the relationship between bias and variance in machine learning. Decreasing the bias will increase the variance and vice versa.
+
+[back to top](#contents)
 
 ## 6 Probability
 
