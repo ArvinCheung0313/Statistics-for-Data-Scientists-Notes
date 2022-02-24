@@ -37,9 +37,21 @@ This repo includes essential notes I read from：
 * [6 Probability](#6-probability)
   * [6.1 Conditional Probability](#61-conditional-probability)
   * [6.2 Bayesian Formula](#62-bayesian-formula)
+* [7 Regression and Prediction](#7-regression-and-prediction)
+* [8 Statistical Machine Learning](#8-statistical-machine-learning)
+* [9 Unsupervised Learning](#9-unsupervised-learning)
 
 ## 1 Exploratory Data Analysis
 
+### 1.1 Common Data Types
+
+#### 1.1.1 Numeric
+* **Continuous**: Data that can take on any value in an interval. (Synonyms: interval, float, numeric)
+* **Discrete**: Data that can take only integer values, such as counts. (Synonyms: integer, count)
+
+#### 1.1.2 Categorical
+* **Binary**: Categorical data with just two outcomes, e.g., 0/1, True/False. (Synonyms: dichotomous, logical, indicator, boolean)
+* **Ordinal**: Catrgorical data has an explicit ordering. (Synonym: ordered factor)
 
 ## 2 Data and Sampling
 
@@ -350,3 +362,14 @@ When building a supervised machine-learning algorithm, the goal is to achieve **
 
 
 ### 6.2 Bayesian Formula 
+
+
+## 7 Regression and Prediction
+
+
+
+## 8 Statistical Machine Learning
+
+
+
+## 9 Unsupervised Learning
