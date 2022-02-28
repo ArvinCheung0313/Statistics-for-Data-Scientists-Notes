@@ -58,6 +58,49 @@ This repo includes essential notes I read from：
 * **Binary**: Categorical data with just two outcomes, e.g., 0/1, True/False. (Synonyms: dichotomous, logical, indicator, boolean)
 * **Ordinal**: Catrgorical data has an explicit ordering. (Synonym: ordered factor)
 
+### 1.2 Estimates of Location
+* **Mean** (Average) Sensitive to outlier
+* **Weighted Mean** (Weighted average)
+* **Median** (50th percentile)
+* **Percentile** (Quantile)
+* **Outlier**: A data value that is outside of the IQR.
+
+### 1.3 Estimates of Variability
+* **Deviation** (Errors, redisuals)
+* **Variance** (Mean squared error)
+* **Standard Deviation**
+* **Mean Absolute Deviation from the Median**
+* **Range** The difference between the largest and the smallest value in a data set
+* **Interquartile Range** (IQR) The difference between the 75th percentile and the 25th percentile
+
+### 1.4 Exploring the Data Distribution
+* **Boxplot**  
+  A quick way to visualize the distribution of data. In python, we can also use `violinplot` from `seaborn` package to visualize the data.
+
+  <img width="499" alt="image" src="https://user-images.githubusercontent.com/91806768/156066485-7a97268b-2e9e-4e90-94eb-025f55c71ebe.png">
+
+* **Frequency Table**  
+  A tally of the count of numeric data values that fall into a set of intervals(bins)
+  
+  <img width="627" alt="image" src="https://user-images.githubusercontent.com/91806768/156067365-a18cef37-87a0-4020-a19c-f499df78c7b6.png">
+
+* **Histogram**  
+  A plot of the frequency table
+
+  <img width="550" alt="image" src="https://user-images.githubusercontent.com/91806768/156066586-470d0ad5-98e8-42de-a401-a53a9b1c60ee.png">
+
+* **Density Plot**  
+  A smooth version of the histogram, often based on a kernel density estimate.
+
+  <img width="549" alt="image" src="https://user-images.githubusercontent.com/91806768/156066717-a25cacd8-f3b9-4377-839b-e137d0d6234e.png">
+
+### 1.5 Exploring Binary and Categorical Data
+* **Mode**
+* **Expected Value**
+* **Bar Charts**  
+  <img width="500" alt="image" src="https://user-images.githubusercontent.com/91806768/156067656-023364e2-808c-4d44-9baf-fa6f0683197b.png">
+* **Pie Charts**
+
 ## 2 Data and Sampling
 
 ### 2.1 Basic Key Terms
@@ -411,25 +454,25 @@ The difference between the observed values and the fitted values. (Synonyms: err
 #### 7.1.8 Least Squares
 The method of fitting a regression by minimizing the sum of squared residuals. (Synonyms: ordinary least squares, OLS)
 
-<img width="241" alt="image" src="https://user-images.githubusercontent.com/91806768/156056918-77085406-8350-489e-9383-4a28d5abd90f.png">
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/91806768/156056918-77085406-8350-489e-9383-4a28d5abd90f.png">
 
 #### 7.1.9 Root Mean Squared Error (RMSE)
 The square root of the average squared error of the regression (this is the most widely used metric to compare regression models).
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/91806768/156057534-cff1eb63-c7f2-4c63-a375-d3d84e4e134f.png">
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/91806768/156057534-cff1eb63-c7f2-4c63-a375-d3d84e4e134f.png">
 
 #### 7.1.10 Redidual Standart Error
 The same as RMSE, but adjusted for degrees of freedom.
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/91806768/156057601-5f0d0b00-772a-4292-83b6-587e7ff2c69f.png">
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/91806768/156057601-5f0d0b00-772a-4292-83b6-587e7ff2c69f.png">
 
 #### 7.1.11 R-Squared
 The proportion of variance explained by the model, from 0 to 1.
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/91806768/156057679-05426453-57b0-401e-98e2-6e7435d3463a.png">
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/91806768/156057679-05426453-57b0-401e-98e2-6e7435d3463a.png">
 
 ### 7.2 Linear Regression
-<img width="550" alt="image" src="https://user-images.githubusercontent.com/91806768/156057407-59a41ef9-0cf9-4b8d-b136-8ae233dbfacc.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/91806768/156057407-59a41ef9-0cf9-4b8d-b136-8ae233dbfacc.png">
 
 ### 7.2.1 Assumptions
 * **Linearity**
