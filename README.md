@@ -36,8 +36,13 @@ This repo includes essential notes I read from：
   * [5.3 Bias-variance Trade Off](#53-bias-variance-trade-off)
 * [6 Probability](#6-probability)
   * [6.1 Conditional Probability](#61-conditional-probability)
-  * [6.2 Bayesian Formula](#62-bayesian-formula)
+  * [6.2 Bayesian Theorem](#62-bayesian-theorem)
 * [7 Regression and Prediction](#7-regression-and-prediction)
+  * [7.1 Key Terms](#71-key-terms)
+  * [7.2 Linear Regression](#72-linear-regression)
+  * [7.3 Stepwise Regression](#73-stepwise-regression)
+  * [7.4 Correlated Variables](#74-correlated-variables)
+  * [7.5 Confounding Variables](#75-confounding-variables)
 * [8 Statistical Machine Learning](#8-statistical-machine-learning)
 * [9 Unsupervised Learning](#9-unsupervised-learning)
 
@@ -198,8 +203,21 @@ A Exponential distribution is a continuous distribution which is used to measure
 
 ### 4.1 A/B Testing
 
+#### 4.1.1 A and B
+A common way to test hyothesis in web design and marketing, as results are so readily measured. For example:
+* Testing two prices to determine which yields more net profit
+* Testing two web headlines to determine which produces more clicks
+* Testing two promotions to determine which yields more revenue
 
-### 4.2 Statistical Significance and p-Values
+Be careful of the test statistic or metric to use when comparing group A and group B. The most common metrics in data science is usually a binary variable: click or no-click, buy or don't buy, fraud or no fraud, etc.
+
+#### 4.1.2 Hypothesis Tests
+* **Null Hypothesis**  
+  The hypothesis that chance is to blame.
+* **Alternative Hypothesis**  
+  Counterpoint to the null (what we want to prove).
+
+### 4.2 Statistical Significance and P-Values
 
 #### 4.2.1 P-value
 Given a chance model that embodies the null hypothesis, the p-value is the probability of obtaining results as unusual or extreme as the observed results.
@@ -307,7 +325,7 @@ Covariance is a statistical term that refers to a systematic relationship betwee
 
 ## 5 Classification
 ### 5.1 Naive Bayes
-
+Uses the probability of observing predictor values, given an outcome, to estimate what is really of interest: the probability of observing outcome Y = *i*, given a set of predictor values.
 
 ### 5.2 Confusion Matrix
 A confusion matrix is a 2x2 table that summarizes the prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. It can be used to calculate various measurements such as: accuracy, prevalence, specificity, sensitivity, precision, and recall.
@@ -359,14 +377,87 @@ When building a supervised machine-learning algorithm, the goal is to achieve **
 ## 6 Probability
 
 ### 6.1 Conditional Probability
+A probability computed under the assumption that some condition holds.  
+Foe example, Arvin and Lydia have two children, and one of them is a girl. What is the porbability that the other child is a gril? (1/3)
 
-
-### 6.2 Bayesian Formula 
-
+### 6.2 Bayesian Theorem 
+A relationship beteen the conditional probabilities of two events. It's often interpreted as a statement about how a body of evidence, *E*, affects the probability of a hypothesis, *H*:
+<img width="528" alt="image" src="https://user-images.githubusercontent.com/91806768/156055026-239e65e6-9f1a-45d7-94f4-934b3bb8b8e2.png">
 
 ## 7 Regression and Prediction
 
+### 7.1 Key Terms
+#### 7.1.1 Response  
+Target variable we are trying to predict. (Synonyms: dependent variable, Y variable, outcome)
+  
+#### 7.1.2 Independent Variable
+Variable(s) used to predict the repsonse. (Synonyms: X variable, feature, attribute, predictor)
 
+#### 7.1.3 Record
+The vector of predictor and outcome values for a specific individual or case. (Synonyms: row, case, instance, example)
+
+#### 7.1.4 Intercept
+The predicted value when X = 0. (Synonyms: b0)
+
+#### 7.1.5 Regression Coefficient
+The slope of the regression line. (Synonyms: slope, b1, parameter estimates, weights)
+
+#### 7.1.6 Fitted Values
+The estimates Yi(hat) obtained from the regression line. (Synonyms: dpredicted values)
+
+#### 7.1.7 Rediduals
+The difference between the observed values and the fitted values. (Synonyms: errors)
+
+#### 7.1.8 Least Squares
+The method of fitting a regression by minimizing the sum of squared residuals. (Synonyms: ordinary least squares, OLS)
+
+<img width="241" alt="image" src="https://user-images.githubusercontent.com/91806768/156056918-77085406-8350-489e-9383-4a28d5abd90f.png">
+
+#### 7.1.9 Root Mean Squared Error (RMSE)
+The square root of the average squared error of the regression (this is the most widely used metric to compare regression models).
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/91806768/156057534-cff1eb63-c7f2-4c63-a375-d3d84e4e134f.png">
+
+#### 7.1.10 Redidual Standart Error
+The same as RMSE, but adjusted for degrees of freedom.
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/91806768/156057601-5f0d0b00-772a-4292-83b6-587e7ff2c69f.png">
+
+#### 7.1.11 R-Squared
+The proportion of variance explained by the model, from 0 to 1.
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/91806768/156057679-05426453-57b0-401e-98e2-6e7435d3463a.png">
+
+### 7.2 Linear Regression
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/91806768/156057407-59a41ef9-0cf9-4b8d-b136-8ae233dbfacc.png">
+
+### 7.2.1 Assumptions
+* **Linearity**
+  The relationship between X and the mean of Y is linear.
+* **Homoscedasticity**
+  The variance of residual is the same for any value of X.
+* **Independence**
+  Observations are independent of each other.
+* **Normality**
+  For any fixed value of X, Y is normally distributed.
+
+### 7.3 Stepwise Regression
+A way to automatically determine which variables should be included in the model, we usually aim to find the model with least AIC and largest adjusted R-squared.
+
+### 7.4 Correlated Variables
+When the predictor variables are highly correlated, it is difficulty to interpret the individual coefficients. It often inflates the standard error of the estimates.
+
+#### 7.4.1 Multicollinearity
+An extreme case of correlated variables. It occurs when:
+* A variable is included multiple times by error.
+* P dummies, instead of P-1 dummies, are createed from a factor variable.
+* Two variables are nearly perfectly correlated with one another.
+
+### 7.5 Confounding Variables
+A type of third-party variable that are related to both independent and dependent variables. Need careful treatment.
+* Restrict your treatment group by only including subjects with the same values of potential confounding factors.
+* Match your treatment group with comparison group that eahc of them have a counterpart in the treatment group with the same potential confounding factors.
+* Randomization by gathering a large group of subjects to participate in your study.
 
 ## 8 Statistical Machine Learning
 
