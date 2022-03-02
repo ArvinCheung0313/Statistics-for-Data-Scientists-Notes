@@ -3,7 +3,7 @@ This repo includes essential notes I read from：
 * Practical Statistics for Data Scientists - 50 Essential Concepts Using R and Python [book link](https://github.com/ArvinCheung0313/Statistics-for-Data-Scientists-Notes/blob/main/PracticalStatisticsforDataScientists50EssentialConceptsUsingRandPythonbyPeterBruceAndrewBrucePeterGedeck.pdf)
 * Think Stats [book link](https://github.com/ArvinCheung0313/Statistics-for-Data-Scientists-Notes/blob/main/thinkstats.pdf)
 
-:surfer:Currently updating...:surfing_man: 2020-02-28
+:surfer:Currently updating...:surfing_man: 2020-03-02
 
 ## Contents
 * [1 Exploratory Data Analysis](#1-exploratory-data-analysis)
@@ -504,6 +504,78 @@ A type of third-party variable that are related to both independent and dependen
 
 ## 8 Statistical Machine Learning
 
+### 8.1 K-Nearest Neighbors (KNN)
+
+#### 8.1.1 Simple and Easily Understood
+KNN can be used to classfy or predict in the foloowing scenarios:
+* Find *K* records that have similar features (i.e., similar predictor values)
+* For classification, find out what the majority class among similar records and assign that new class to the new record
+* For prediction (KNN regression), find the average among those similar records, and predict for the new record
+
+#### 8.1.2 Distance Metrics
+Determines how far two records are from one another. Two common used metrics is :
+***Euclidean Distance***  
+<img width="499" alt="image" src="https://user-images.githubusercontent.com/91806768/156466576-417927c3-05fd-4753-8293-0fbb4b396059.png">
+
+***Manhattan Distance***  
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/91806768/156466629-48d7ddf0-c4b5-4db9-8e8f-ca411bbe1e03.png">
+
+To address the large scale of some variables, we would need to ***standardize*** the data.
+
+#### 8.1.3 One Hot Encoder
+Convert factor variables to a series of binary dummy variables conveying the same information. Usually, we dummy a *P* classes variable into *P-1* classes to avoid data redundancy.
+
+#### 8.1.4 Standardization (Normalization, z-scores)
+A method puts all variables on similar scales by substracting the mean and dividing by the standard deviation.  
+<img width="181" alt="image" src="https://user-images.githubusercontent.com/91806768/156467206-7d82e7fd-3471-4a37-b088-bc7019a1bb55.png">
+
+#### 8.1.5 Choosing K
+Generally, the best *K* depends greatly on the nature of the data.
+
+#### 8.1.6 KNN as A Feature Engine
+KNN often used as a first stage in predictive modeling by creating a new predictor for later modeling.
+
+### 8.2 Tree Models
+Also known as *Classification and Regression Trees(CART)*, *decision trees*. Can be seen as a set of "if-then-else" rules that are easy to understand.
+
+#### 8.2.1 Controlling the Tree
+* Min Samples Split
+* Min Samples Leaf
+* Complexity Parameter
+* Max Depth
+
+### 8.3 Bagging and the Random Forest
+
+#### 8.3.1 Boostrap Aggregating (Bagging)
+A general technique to form a collection of models by boostrapping the data
+
+#### 8.3.2 Random Forest
+Applying bagging to decision trees by sampling the records as well as the varibales. When the number of sampling variables equal to all variables, it becomes bagging.
+
+#### 8.3.3 Variable Importance
+By using random forest, it can automatically determine which predictors are important and discover complex relationships between predictors corresponding to interaction terms. Morevoer, standardization of the data is unnecessary as it's predicted by "if-then-else" logic.
+
+#### 8.3.4 Hyperparameters
+* **nodesize/min_samples_leaf**
+  The minimum size for terminal nodes (leaves in the tree)
+* **maxnodes/max_leaf_nodes**
+  The maximum number of nodes in each decision tree.
+
+### 8.4 Boosting
 
 
 ## 9 Unsupervised Learning
+
+### 9.1 Principal Components Analysis (PCA)
+
+
+### 9.2 K-Means Clustering
+
+
+### 9.3 Hierarchical Clustering
+
+
+### 9.4 Model-Based Clustering
+
+
+### 9.5 Scaling and Categorical Variables
