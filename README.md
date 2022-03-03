@@ -7,6 +7,11 @@ This repo includes essential notes I read from：
 
 ## Contents
 * [1 Exploratory Data Analysis](#1-exploratory-data-analysis)
+  * [1.1 Common Data Types](#11-common-data-types)
+  * [1.2 Estimates of Location](#12-estimates-of-location)
+  * [1.3 Estimates of Variability](#13-estimates-of-variability)
+  * [1.4 Exploring the Data Distribution](#14-exploring-the-data-distribution)
+  * [1.5 Exploring Binary and Categorical Data](#15-exploring-binary-and-categorical-data)
 * [2 Data and Sampling](#2-data-and-sampling)
   * [2.1 Basic Key Terms](#21-basic-key-terms)
   * [2.2 When Does Size Matter?](#22-when-does-size-matter)
@@ -44,7 +49,16 @@ This repo includes essential notes I read from：
   * [7.4 Correlated Variables](#74-correlated-variables)
   * [7.5 Confounding Variables](#75-confounding-variables)
 * [8 Statistical Machine Learning](#8-statistical-machine-learning)
+  * [8.1 K-Nearest Neighbors (KNN)](#81-k-nearest-neighbors-knn)
+  * [8.2 Tree Models](#82-tree-models)
+  * [8.3 Bagging and the Random Forest](#83-bagging-and-the-random-forest)
+  * [8.4 Boosting](#84-boosting)
 * [9 Unsupervised Learning](#9-unsupervised-learning)
+  * [9.1 Principal Components Analysis (PCA)](#91-principal-components-analysis-pca)
+  * [9.2 K-Means Clustering](#92-k-means-clustering)
+  * [9.3 Hierarchical Clustering](#93-hierarchical-clustering)
+  * [9.4 Model-Based Clustering](#94-model-based-clustering)
+  * [9.5 Scaling and Categorical Variables](#95-scaling-and-categorical-variables)
 
 ## 1 Exploratory Data Analysis
 
@@ -100,6 +114,8 @@ This repo includes essential notes I read from：
 * **Bar Charts**  
   <img width="500" alt="image" src="https://user-images.githubusercontent.com/91806768/156067656-023364e2-808c-4d44-9baf-fa6f0683197b.png">
 * **Pie Charts**
+
+[back to top](#contents)
 
 ## 2 Data and Sampling
 
@@ -502,6 +518,8 @@ A type of third-party variable that are related to both independent and dependen
 * Match your treatment group with comparison group that eahc of them have a counterpart in the treatment group with the same potential confounding factors.
 * Randomization by gathering a large group of subjects to participate in your study.
 
+[back to top](#contents)
+
 ## 8 Statistical Machine Learning
 
 ### 8.1 K-Nearest Neighbors (KNN)
@@ -564,6 +582,8 @@ By using random forest, it can automatically determine which predictors are impo
 ### 8.4 Boosting
 
 
+[back to top](#contents)
+
 ## 9 Unsupervised Learning
 
 ### 9.1 Principal Components Analysis (PCA)
@@ -579,3 +599,6 @@ By using random forest, it can automatically determine which predictors are impo
 
 
 ### 9.5 Scaling and Categorical Variables
+
+
+[back to top](#contents)
