@@ -386,6 +386,12 @@ Covariance is a statistical term that refers to a systematic relationship betwee
 ### 5.1 Naive Bayes
 Uses the probability of observing predictor values, given an outcome, to estimate what is really of interest: the probability of observing outcome Y = *i*, given a set of predictor values.
 
+**Why Naive?**  
+> We assume Xj is independent of all the other variables Xk for k != j.
+
+#### 5.1.1 Posterior Probability
+The probability of an outcome after the predictor information has benn incorporated. (Contrast to ***prior probability***)
+
 ### 5.2 Confusion Matrix
 A confusion matrix is a 2x2 table that summarizes the prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. It can be used to calculate various measurements such as: accuracy, prevalence, specificity, sensitivity, precision, and recall.
 
@@ -587,6 +593,10 @@ By using random forest, it can automatically determine which predictors are impo
 ## 9 Unsupervised Learning
 
 ### 9.1 Principal Components Analysis (PCA)
+A technique to discover the way in which **numeric** variables covary in a linear way.
+* Explain most variability with smaller set of variables
+* Reduce the dimension of the data
+
 
 
 ### 9.2 K-Means Clustering
