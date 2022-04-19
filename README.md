@@ -396,7 +396,7 @@ The probability of an outcome after the predictor information has benn incorpora
 A confusion matrix is a 2x2 table that summarizes the prediction results on a classification problem. The number of correct and incorrect predictions are summarized with count values and broken down by each class. It can be used to calculate various measurements such as: accuracy, prevalence, specificity, sensitivity, precision, and recall.
 
 *Figure 5-1. Confusion Matrix*  
-<img width="1234" alt="image" src="https://user-images.githubusercontent.com/91806768/155035453-acc12fd1-2de9-44c6-a9ba-7a9c4572ee13.png">
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/91806768/163900790-49e93ab6-5705-4901-bed6-0195bc3fc0ee.png">
 
 ### 5.3 Bias-Variance Trade Off
 
